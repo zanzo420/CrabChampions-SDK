@@ -14,7 +14,7 @@ namespace SDK
 class USteamSocketsNetConnection : public UNetConnection
 {
 public:
-	uint8                                        Pad_7F[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3B[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USteamSocketsNetConnection* GetDefaultObj();
@@ -26,7 +26,7 @@ public:
 class USteamSocketsNetDriver : public UNetDriver
 {
 public:
-	uint8                                        Pad_81[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_3C[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class USteamSocketsNetDriver* GetDefaultObj();

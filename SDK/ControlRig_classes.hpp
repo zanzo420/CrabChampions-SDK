@@ -14,25 +14,25 @@ namespace SDK
 class UControlRig : public UObject
 {
 public:
-	uint8                                        Pad_297[0x1D];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_16E[0x1D];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class ERigExecutionType                 ExecutionType;                                     // 0x45(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_298[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_16F[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class URigVM*                                VM;                                                // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FRigHierarchyContainer                Hierarchy;                                         // 0x50(0x368)(NativeAccessSpecifierPrivate)
 	TSoftObjectPtr<class UControlRigGizmoLibrary> GizmoLibrary;                                      // 0x3B8(0x28)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_299[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_176[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FName, struct FCachedPropertyPath> InputProperties;                                   // 0x3F0(0x50)(Deprecated, NativeAccessSpecifierPrivate)
 	TMap<class FName, struct FCachedPropertyPath> OutputProperties;                                  // 0x440(0x50)(Deprecated, NativeAccessSpecifierPrivate)
 	struct FControlRigDrawContainer              DrawContainer;                                     // 0x490(0x18)(NativeAccessSpecifierPrivate)
-	uint8                                        Pad_29A[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_178[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAnimationDataSourceRegistry*          DataSourceRegistry;                                // 0x4C0(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class FName>                          EventQueue;                                        // 0x4C8(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_29B[0x78];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_17A[0x78];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigInfluenceMapPerEvent              Influences;                                        // 0x550(0x60)(NativeAccessSpecifierPrivate)
 	class UControlRig*                           InteractionRig;                                    // 0x5B0(0x8)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class UControlRig>               InteractionRigClass;                               // 0x5B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UAssetUserData*>                AssetUserData;                                     // 0x5C0(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_29C[0x80];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_17D[0x80];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRig* GetDefaultObj();
@@ -48,7 +48,7 @@ public:
 class UAdditiveControlRig : public UControlRig
 {
 public:
-	uint8                                        Pad_29D[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_180[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAdditiveControlRig* GetDefaultObj();
@@ -60,7 +60,7 @@ public:
 class UControlRigAnimInstance : public UAnimInstance
 {
 public:
-	uint8                                        Pad_29E[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_182[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigAnimInstance* GetDefaultObj();
@@ -96,9 +96,9 @@ public:
 	bool                                         bUpdateInEditor;                                   // 0x4BB(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bDrawBones;                                        // 0x4BC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowDebugDrawing;                                 // 0x4BD(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BA[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_220[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UControlRig*                           ControlRig;                                        // 0x4C0(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2BB[0x68];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_221[0x68];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigComponent* GetDefaultObj();
@@ -157,11 +157,11 @@ public:
 	TSubclassOf<class UControlRig>               ControlRigClass;                                   // 0x228(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bRefreshOnTick;                                    // 0x230(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSelectable;                                     // 0x231(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BE[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_232[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInterface*                    MaterialOverride;                                  // 0x238(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ColorParameter;                                    // 0x240(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCastShadows;                                      // 0x250(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2BF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_233[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       ActorRootComponent;                                // 0x258(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UControlRig*                           ControlRig;                                        // 0x260(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class FName>                          ControlNames;                                      // 0x268(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
@@ -169,7 +169,7 @@ public:
 	TArray<class UStaticMeshComponent*>          Components;                                        // 0x288(0x10)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	TArray<class UMaterialInstanceDynamic*>      Materials;                                         // 0x298(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
 	class FName                                  ColorParameterName;                                // 0x2A8(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2C0[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_236[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AControlRigControlActor* GetDefaultObj();
@@ -192,7 +192,7 @@ public:
 	uint8                                        bSelected : 1;                                     // Mask: 0x2, PropSize: 0x10x244(0x1)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bSelectable : 1;                                   // Mask: 0x4, PropSize: 0x10x244(0x1)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bHovered : 1;                                      // Mask: 0x8, PropSize: 0x10x244(0x1)(BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2C1[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_24B[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class AControlRigGizmoActor* GetDefaultObj();
@@ -218,12 +218,12 @@ public:
 class UControlRigGizmoLibrary : public UObject
 {
 public:
-	uint8                                        Pad_2C2[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_24C[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FControlRigGizmoDefinition            DefaultGizmo;                                      // 0x30(0x60)(Edit, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterial>              DefaultMaterial;                                   // 0x90(0x28)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  MaterialColorParameter;                            // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FControlRigGizmoDefinition>    Gizmos;                                            // 0xC0(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C3[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_24E[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigGizmoLibrary* GetDefaultObj();
@@ -235,7 +235,7 @@ public:
 class UControlRigLayerInstance : public UAnimInstance
 {
 public:
-	uint8                                        Pad_2C4[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_251[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigLayerInstance* GetDefaultObj();
@@ -261,14 +261,14 @@ public:
 	bool                                         bCheckControls;                                    // 0x28(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCheckBones;                                       // 0x29(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCheckCurves;                                      // 0x2A(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C6[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_253[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TranslationPrecision;                              // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        RotationPrecision;                                 // 0x30(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ScalePrecision;                                    // 0x34(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CurvePrecision;                                    // 0x38(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  EventNameA;                                        // 0x3C(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FName                                  EventNameB;                                        // 0x44(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2C7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_254[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigPose                              Pose;                                              // 0x50(0x10)(Transient, NativeAccessSpecifierPrivate)
 
 	static class UClass* StaticClass();
@@ -296,7 +296,7 @@ public:
 	TSoftObjectPtr<class UAnimSequence>          LastExportedToAnimationSequence;                   // 0x1C8(0x28)(AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class USkeletalMesh>          LastExportedUsingSkeletalMesh;                     // 0x1F0(0x28)(AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LastExportedFrameRate;                             // 0x218(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2C9[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_257[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigSequence* GetDefaultObj();
@@ -308,7 +308,7 @@ public:
 class UControlRigSequencerAnimInstance : public UAnimSequencerInstance
 {
 public:
-	uint8                                        Pad_2CA[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_258[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigSequencerAnimInstance* GetDefaultObj();
@@ -332,7 +332,7 @@ class UControlRigValidator : public UObject
 {
 public:
 	TArray<class UControlRigValidationPass*>     Passes;                                            // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2CB[0x30];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25C[0x30];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UControlRigValidator* GetDefaultObj();
@@ -346,7 +346,7 @@ class UFKControlRig : public UControlRig
 public:
 	TArray<bool>                                 IsControlActive;                                   // 0x650(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	enum class EControlRigFKRigExecuteMode       ApplyMode;                                         // 0x660(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2CC[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UFKControlRig* GetDefaultObj();
@@ -362,12 +362,12 @@ public:
 	TSubclassOf<class UControlRig>               ControlRigClass;                                   // 0x150(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<bool>                                 ControlsMask;                                      // 0x158(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FMovieSceneTransformMask              TransformMask;                                     // 0x168(0x4)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2CD[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_25E[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneFloatChannel               Weight;                                            // 0x170(0xA0)(NativeAccessSpecifierPublic)
 	TMap<class FName, struct FChannelMapInfo>    ControlChannelMap;                                 // 0x210(0x50)(NativeAccessSpecifierPublic)
 	TArray<struct FEnumParameterNameAndCurve>    EnumParameterNamesAndCurves;                       // 0x260(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FIntegerParameterNameAndCurve> IntegerParameterNamesAndCurves;                    // 0x270(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2CE[0x68];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_25F[0x68];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UMovieSceneControlRigParameterSection* GetDefaultObj();
@@ -379,7 +379,7 @@ public:
 class UMovieSceneControlRigParameterTrack : public UMovieSceneNameableTrack
 {
 public:
-	uint8                                        Pad_2CF[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_260[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UControlRig*                           ControlRig;                                        // 0xA0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMovieSceneSection*                    SectionToKey;                                      // 0xA8(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0xB0(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)

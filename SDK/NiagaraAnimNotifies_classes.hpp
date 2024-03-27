@@ -19,12 +19,12 @@ public:
 	struct FRotator                              RotationOffset;                                    // 0x4C(0xC)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                               Scale;                                             // 0x58(0xC)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAbsoluteScale;                                    // 0x64(0x1)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_291[0x1B];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_113[0x1B];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        Attached : 1;                                      // Mask: 0x1, PropSize: 0x10x80(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_2E : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_292[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        BitPad_B : 7;                                      // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_114[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  SocketName;                                        // 0x84(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_293[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_115[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAnimNotify_PlayNiagaraEffect* GetDefaultObj();
@@ -42,7 +42,7 @@ public:
 	struct FVector                               LocationOffset;                                    // 0x40(0xC)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                              RotationOffset;                                    // 0x4C(0xC)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bDestroyAtEnd;                                     // 0x58(0x1)(Edit, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_294[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_117[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAnimNotifyState_TimedNiagaraEffect* GetDefaultObj();
@@ -55,7 +55,7 @@ public:
 class UAnimNotifyState_TimedNiagaraEffectAdvanced : public UAnimNotifyState_TimedNiagaraEffect
 {
 public:
-	uint8                                        Pad_296[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_11A[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAnimNotifyState_TimedNiagaraEffectAdvanced* GetDefaultObj();

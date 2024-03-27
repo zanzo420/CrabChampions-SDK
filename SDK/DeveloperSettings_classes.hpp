@@ -14,7 +14,7 @@ namespace SDK
 class UDeveloperSettings : public UObject
 {
 public:
-	uint8                                        Pad_270[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_110[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UDeveloperSettings* GetDefaultObj();

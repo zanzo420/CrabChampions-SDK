@@ -14,7 +14,7 @@ namespace SDK
 class UBP_CameraShake_PortalTransition_OLD_C : public UCameraShakeBase
 {
 public:
-	uint8                                        Pad_18DC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_105D[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UBP_CameraShake_PortalTransition_OLD_C* GetDefaultObj();

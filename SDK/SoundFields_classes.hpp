@@ -15,7 +15,7 @@ class UAmbisonicsEncodingSettings : public USoundfieldEncodingSettingsBase
 {
 public:
 	int32                                        AmbisonicsOrder;                                   // 0x28(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_8E3[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_97B[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass();
 	static class UAmbisonicsEncodingSettings* GetDefaultObj();
